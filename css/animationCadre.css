@@ -1,0 +1,157 @@
+
+/* animation to right */
+
+@keyframes anim-2-to-right{
+    0% {left:0;
+       width: 30px;
+       height: 20px;
+       opacity: 0.2;}
+    100%{left:30px;
+        width: 50px;
+        height: 30px;
+        opacity: 0.5;}
+}
+.c-2-to-right{
+    position: relative;
+    animation-name: anim-2-to-right;
+    animation-duration: 3s;
+}
+
+@keyframes anim-1-to-right{
+    0% {left:0;
+       width: 50px;
+       height: 30px;
+       opacity: 0.5;}
+    100%{left:30px;
+        width: 80px;
+        height: 40px;
+        opacity: 1;}
+}
+.c-1-to-right{
+    position: relative;
+    animation-name: anim-1-to-right;
+    animation-duration: 3s;
+}
+@keyframes anim0-to-right{
+    0% {left:0;
+       width: 80px;
+       height: 40px;
+       opacity: 1;}
+    100%{left:30px;
+        width: 50px;
+        height: 30px;
+        opacity: 0.5;}
+}
+.c0-to-right{
+    position: relative;
+    animation-name: anim0-to-right;
+    animation-duration: 3s;
+}
+@keyframes anim1-to-right{
+    0% {left:0;
+       width: 50px;
+       height: 30px;
+       opacity: 0.5;}
+    100%{left:30px;
+        width: 30px;
+        height: 20px;
+        opacity: 0.2;}
+    }
+.c1-to-right{
+    position: relative;
+    animation-name: anim1-to-right;
+    animation-duration: 3s;
+}
+@keyframes anim2-to-right{
+    0% {left:0;
+       width: 30px;
+       height: 20px;
+       opacity: 0.2;}
+    100%{left:30px;
+        width: 0;
+        height: 0;
+        opacity: 0;}
+    }
+.c2-to-right{
+    position: relative;
+    animation-name: anim2-to-right;
+    animation-duration: 3s;
+}
+
+/* animation to left */
+
+@keyframes anim-2-to-left{
+    0% {right:0;
+       width: 30px;
+       height: 20px;
+       opacity: 0.2;}
+    100%{right:0px;
+        width: 0px;
+        height: 0px;
+        opacity: 0;}
+}
+.c-2-to-left{
+    position: relative;
+    animation-name: anim-2-to-left;
+    animation-duration: 3s;
+}
+@keyframes anim-1-to-left{
+    0% {right:0;
+        width: 50px;
+        height: 30px;
+        opacity: 0.5;}
+     100%{right:0px;
+         width: 30px;
+         height: 20px;
+         opacity: 0.2;}
+}
+.c-1-to-left{
+    position: relative;
+    animation-name: anim-1-to-left;
+    animation-duration: 3s;
+}
+@keyframes anim0-to-left{
+    0% {right:0;
+        width: 80px;
+        height: 40px;
+        opacity: 1;}
+     100%{right:0px;
+         width: 50px;
+         height: 30px;
+         opacity: 0.5;}
+}
+.c0-to-left{
+    position: relative;
+    animation-name: anim0-to-left;
+    animation-duration: 3s;
+}
+@keyframes anim1-to-left{
+    0% {right:0;
+        width: 50px;
+        height: 30px;
+        opacity: 0.5;}
+     100%{right:0px;
+         width: 80px;
+         height: 40px;
+         opacity: 1;}
+}
+.c1-to-left{
+    position: relative;
+    animation-name: anim1-to-left;
+    animation-duration: 3s;
+} 
+@keyframes anim2-to-left{
+    0% {right:0px;
+        width: 30px;
+        height: 20px;
+        opacity: 0.2;}
+     100%{right:0px;
+         width: 50px;
+         height: 30px;
+         opacity: 0.5;}
+}
+.c2-to-left{
+    position: relative;
+    animation-name: anim2-to-left;
+    animation-duration: 3s;
+} 

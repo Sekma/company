@@ -15,7 +15,7 @@ nav{
     width: 100%;
     align-items: start;
     justify-content: space-between;
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(230, 230, 230);
 }
 nav .logo{
     height: 50px;
@@ -41,7 +41,7 @@ nav ul a{
 }
 nav ul a:hover{ 
     background-color: rgb(120, 120, 120);
-    color: rgb(210, 210, 210);
+    color: rgb(230, 230, 230);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -51,7 +51,7 @@ nav ul a:hover{
 /* Style Section 1 (Background) */
 
 .section1{
-    height: 550px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +60,7 @@ nav ul a:hover{
     font-size: 150%;
 }
 .section1 h1{
-    margin-top: 100px;
+    margin-top: 50px;
     width: 200px;
     padding: 5px;
     text-align: center;
@@ -69,21 +69,70 @@ nav ul a:hover{
     border-radius: 5px;
     opacity: 0.5;
 }
-.section1 p{
-    width: 400px;
-    background-color: white;
-    border-radius: 5px;
-    opacity: 0.5;
-}
-
-.paragraphe{
+.section1-container{
     display: flex;
     flex-direction: row;
     width: 90%;
     justify-content:space-around;
+    align-items: center; 
+    margin-top: 50px;
+   
+}
+.section1 .paragraphe{
+    display: flex;
     align-items: center;
-    
-    margin-top: 100px;
+    justify-content: space-around;
+    width: 50%;
+    min-width: 450px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+.section1 .barre{
+    width: 2px;
+    height: 150px;
+    background-color: black;
+    opacity: 0.5;
+}
+.section1 p{
+    width: 70%;
+}
+.cadres{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 10px;
+    align-items: center;
+    width:240px ;
+}
+.cadre0{
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    border-radius: 3px;
+    background-size: cover;
+}
+.cadre-1, .cadre1{
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    opacity: 0.5;
+    background-size: cover;
+}
+.cadre-2, .cadre2{
+    width: 30px;
+    height: 20px;
+    background-color: white;
+    opacity: 0.2;
+    background-size: cover;
+}
+.cadre-1, .cadre-2{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.cadre1, .cadre2{
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 /* Style Bouttons Droite et Gauche du Background */
@@ -234,7 +283,7 @@ i{
 /* END of Style footer */
 
 
-@media (max-width: 992px){
+/* @media (max-width: 992px){
     nav h1{
         width: 120px;
     }
@@ -304,4 +353,4 @@ i{
         text-align: center;
         display: block;
     }
-}
+} */

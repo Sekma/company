@@ -1,16 +1,21 @@
-var bgTab=["img/bg1.jpg","img/bg2.jpg","img/bg3.jpg","img/bg4.jpg","img/bg5.jpg","img/bg6.jpg"];
-var text=["BLUE","ORANGE","GREEN","RED","PINK","YELLOW"];
 
+//tableau du background-image
+var bgTab=["img/bg1.jpg","img/bg2.jpg","img/bg3.jpg","img/bg4.jpg","img/bg5.jpg","img/bg6.jpg"];
+
+//declaration des variables
+var num=0;
+//section1
 var bgSection=document.querySelector(".section1");
+//les boutons gauche et droite
 var left=document.querySelector(".btn-left");
 var right=document.querySelector(".btn-right");
 
 
+//background-image initial
 
-var num=0;
 bgSection.style.backgroundImage = "url("+bgTab[num]+")";
 
-
+//function du bouton droite
 right.addEventListener("click" , function(){
     
     if(num<bgTab.length-1){
@@ -26,7 +31,7 @@ right.addEventListener("click" , function(){
 });
 
 
-
+//function du bouton gauche
 left.addEventListener("click", function(){
     if(num==0){
         num=num+(bgTab.length-1);
