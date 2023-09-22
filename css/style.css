@@ -40,8 +40,8 @@ nav ul a{
 
 }
 nav ul a:hover{ 
-    background-color: rgb(120, 120, 120);
-    color: rgb(230, 230, 230);
+    background-color: rgb(200, 200, 200);
+    color: rgb(65, 105, 165);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -59,44 +59,49 @@ nav ul a:hover{
     transition: background-image 1s ease-out;
     font-size: 150%;
 }
-.section1 h1{
-    margin-top: 50px;
-    width: 200px;
-    padding: 5px;
-    text-align: center;
-    color: rgb(0, 0, 160);
-    background-color: white;
-    border-radius: 5px;
-    opacity: 0.5;
+.logoCenter{
+    height: 200px;
 }
 .section1-container{
     display: flex;
     flex-direction: row;
     width: 90%;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center; 
     margin-top: 50px;
    
 }
-.section1 .paragraphe{
+
+.section1 .paragraphe form{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    min-width: 450px;
-    padding: 20px;
-    background-color: white;
+    gap: 20px;
+}
+.paragraphe form input{
+    height: 30px;
+    width: 250px;
     border-radius: 5px;
-    opacity: 0.5;
+    opacity: 0.8;
+    border: none;
+    padding-left: 10px;
 }
-.section1 .barre{
-    width: 2px;
-    height: 150px;
-    background-color: black;
-    opacity: 0.5;
+::placeholder{
+    color: rgb(215, 0, 90);
 }
-.section1 p{
-    width: 70%;
+.paragraphe form button{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    opacity: 0.8;
+    border: none;
+    background-color: rgb(215, 0, 90);
+    color: white;
+}
+.paragraphe form button:hover{
+   color: rgb(215, 0, 90);
+    cursor: pointer;
+    background-color: white;
 }
 .cadres{
     display: flex;
@@ -143,19 +148,19 @@ nav ul a:hover{
     transform: rotate(45deg);
 }
 .btn-left{
-    border-bottom: 4px solid white;
-    border-left: 4px solid white;
+    border-bottom: 4px solid rgb(215, 0, 90);;
+    border-left: 4px solid rgb(215, 0, 90);;
     border-top-right-radius: 100%;
     margin-left: 5%;
 }
 .btn-right{
-    border-top: 4px solid white;
-    border-right: 4px solid white;
+    border-top: 4px solid rgb(215, 0, 90);;
+    border-right: 4px solid rgb(215, 0, 90);;
     border-bottom-left-radius: 100%;
     margin-right: 5%;
 }
 .btn-left:hover, .btn-right:hover{
-    border-color: rgb(120, 120, 120);
+    border-color: white;
     cursor: pointer;
 }
 
