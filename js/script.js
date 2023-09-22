@@ -8,7 +8,6 @@ var num=0;
 var bgSection=document.querySelector(".section1");
 
 //backround-image fixed
-var imgFixed='img/logo.jpg'
 document.querySelector(".backgroundLogo1").style.backgroundImage="url('img/logo.jpg')";
 document.querySelector(".backgroundLogo2").style.backgroundImage="url('img/logo.jpg')";
 
