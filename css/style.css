@@ -172,7 +172,7 @@ nav ul a:hover{
 /* END of Style section 1 (Background) */
 
 .backgroundLogo1, .backgroundLogo2{
-    height: 250px;
+    height: 300px;
     width: 100%;
     /* background-image: script.js ligne 10 */
     background-color: white;
@@ -268,7 +268,7 @@ background-color: black;
 footer{
     display: flex;;
     background: linear-gradient(to bottom right, rgb(207, 207, 207),white, #7dc0f3);
-    height: 50px;
+    height: 400px;
     width: 100%;
     align-items: center;
     margin-top: auto;
