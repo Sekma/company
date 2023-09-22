@@ -6,6 +6,11 @@ var bgTab=["img/bg1.jpg","img/bg2.jpg","img/bg3.jpg","img/bg4.jpg","img/bg5.jpg"
 var num=0;
 //section1
 var bgSection=document.querySelector(".section1");
+
+//backround-image fixed
+document.querySelector(".backgroundLogo1").style.backgroundImage="url('/img/logo.jpg')";
+document.querySelector(".backgroundLogo2").style.backgroundImage="url('/img/logo.jpg')";
+
 //les boutons gauche et droite
 var left=document.querySelector(".btn-left");
 var right=document.querySelector(".btn-right");

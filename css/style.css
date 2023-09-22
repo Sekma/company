@@ -171,11 +171,11 @@ nav ul a:hover{
 /* END of Style Bouttons Droite et Gauche du Background */
 /* END of Style section 1 (Background) */
 
-.backgroundLogo{
+.backgroundLogo1, .backgroundLogo2{
     height: 250px;
     width: 100%;
+    /* background-image: script.js ligne 10 */
     background-color: white;
-    background-image: url(/img/logo.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
