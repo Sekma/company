@@ -116,14 +116,14 @@ nav ul a:hover{
     width: 50px;
     height: 30px;
     background-color: white;
-    opacity: 0.5;
+    opacity: 0.8;
     background-size: cover;
 }
 .cadre-2, .cadre2{
     width: 30px;
     height: 20px;
     background-color: white;
-    opacity: 0.2;
+    opacity: 0.5;
     background-size: cover;
 }
 .cadre-1, .cadre-2{

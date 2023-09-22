@@ -26,19 +26,18 @@ right.addEventListener("click" , function(){
      }
 
      bgSection.style.backgroundImage = "url("+bgTab[num]+")";
-     
-     
+          
 });
 
 
 //function du bouton gauche
 left.addEventListener("click", function(){
-    if(num==0){
-        num=num+(bgTab.length-1);
-    }
-    
-    else if(num>0){
+
+    if(num>0){
         num--;   
+    }
+    else if(num==0){
+        num=num+(bgTab.length-1);
     }
 
     bgSection.style.backgroundImage="url("+bgTab[num]+")";
