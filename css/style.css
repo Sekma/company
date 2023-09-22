@@ -6,16 +6,19 @@ body{
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
 }
 /* Style NavBar */
 
 nav{
+    position: fixed;
+    z-index: 1;
     display: flex;
-    font-size: x-large;
     width: 100%;
     align-items: start;
     justify-content: space-between;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(240, 240, 240);
+    border-bottom: 3px solid rgb(65, 105, 165);
 }
 nav .logo{
     height: 50px;
@@ -25,14 +28,14 @@ nav ul{
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    width: 70%;
+    width: 50%;
     height: 50px;
     margin: 5px;
 }
 nav ul a{
-    height: 80%;
+    height: 70%;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: center;
     text-decoration: none;
     font-weight: 600;
@@ -51,6 +54,7 @@ nav ul a:hover{
 /* Style Section 1 (Background) */
 
 .section1{
+    margin-top: 63px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -148,14 +152,14 @@ nav ul a:hover{
     transform: rotate(45deg);
 }
 .btn-left{
-    border-bottom: 4px solid rgb(215, 0, 90);;
-    border-left: 4px solid rgb(215, 0, 90);;
+    border-bottom: 4px solid rgb(20, 40, 70);
+    border-left: 4px solid rgb(20, 40, 70);
     border-top-right-radius: 100%;
     margin-left: 5%;
 }
 .btn-right{
-    border-top: 4px solid rgb(215, 0, 90);;
-    border-right: 4px solid rgb(215, 0, 90);;
+    border-top: 4px solid rgb(20, 40, 70);
+    border-right: 4px solid rgb(20, 40, 70);
     border-bottom-left-radius: 100%;
     margin-right: 5%;
 }
@@ -166,6 +170,16 @@ nav ul a:hover{
 
 /* END of Style Bouttons Droite et Gauche du Background */
 /* END of Style section 1 (Background) */
+
+.backgroundLogo{
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    background-image: url(/img/logo.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
 
 /* Style section 2 (Our staff) */
 
