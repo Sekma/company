@@ -8,8 +8,8 @@ var num=0;
 var bgSection=document.querySelector(".section1");
 
 //backround-image fixed
-document.querySelector(".backgroundLogo1").style.backgroundImage="url('img/imgFixed1.jpg')";
-document.querySelector(".backgroundLogo2").style.backgroundImage="url('img/imgFixed2.png')";
+document.querySelector(".backgroundFixed1").style.backgroundImage="url('img/imgFixed1.jpg')";
+document.querySelector(".backgroundFixed2").style.backgroundImage="url('img/imgFixed2.png')";
 
 //les boutons gauche et droite
 var left=document.querySelector(".btn-left");
