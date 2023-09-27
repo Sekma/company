@@ -21,25 +21,35 @@ nav{
 }
 nav .logo{
     height: 50px;
-    margin-left: 5%;
+    margin-left: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+nav .logo:hover{
+    background-color: rgb(200, 200, 200);
 }
 nav ul{
     display: flex;
     list-style-type: none;
     justify-content: space-around;
     width: 50%;
+    min-width: 500px;
     height: 50px;
     margin: 5px;
 }
+
 nav ul a{
     height: 70%;
     width: 100%;
-    padding-top: 15px;
+    padding: 8px;
     text-align: center;
     text-decoration: none;
     font-size: large;
     color: rgb(100, 100, 100);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 nav ul a:hover{ 
     background-color: rgb(200, 200, 200);
@@ -54,7 +64,6 @@ nav ul a:hover{
 /* Style Section 1 (Background) */
 
 .section1{
-    margin-top: 63px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -65,13 +74,13 @@ nav ul a:hover{
 }
 .logoCenter{
     height: 200px;
+    margin-top: 60px;
 }
 .section1-container{
     display: flex;
     flex-direction: row;
     width: 90%;
-    justify-content:space-between;
-    align-items: center; 
+    justify-content:space-between; 
     margin-top: 50px;
    
 }
@@ -107,31 +116,28 @@ nav ul a:hover{
     cursor: pointer;
     background-color: white;
 }
+
 .cadres{
     display: flex;
-    margin-top: auto;
-    margin-bottom: 10px;
+    margin: 10px auto;
     align-items: center;
     width:240px ;
 }
 .cadre0{
     width: 80px;
     height: 40px;
-    background-color: white;
     border-radius: 3px;
     background-size: cover;
 }
 .cadre-1, .cadre1{
     width: 50px;
     height: 30px;
-    background-color: white;
     opacity: 0.8;
     background-size: cover;
 }
 .cadre-2, .cadre2{
     width: 30px;
     height: 20px;
-    background-color: white;
     opacity: 0.5;
     background-size: cover;
 }
@@ -152,19 +158,19 @@ nav ul a:hover{
     transform: rotate(45deg);
 }
 .btn-left{
-    border-bottom: 3px solid rgb(20, 40, 70);
-    border-left: 3px solid rgb(20, 40, 70);
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
     border-top-right-radius: 100%;
     margin-left: 5%;
 }
 .btn-right{
-    border-top: 3px solid rgb(20, 40, 70);
-    border-right: 3px solid rgb(20, 40, 70);
+    border-top: 3px solid white;
+    border-right: 3px solid white;
     border-bottom-left-radius: 100%;
     margin-right: 5%;
 }
 .btn-left:hover, .btn-right:hover{
-    border-color: white;
+    border-color: rgb(20, 40, 70);
     cursor: pointer;
     transition: border-color 0.5s;
 }
