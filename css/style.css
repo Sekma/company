@@ -16,7 +16,7 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(245, 245, 245);
     border-bottom: 2px solid rgb(65, 105, 165);
 }
 nav .logo{
@@ -58,7 +58,25 @@ nav ul a:hover{
     cursor: pointer;
     transition: background-color 0.5s;
 }
-
+/* toggleMenu */
+.burger-toggle{
+    display: none;
+    width: 30px;
+}
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(20, 40, 70);
+    transition: all 0.5s;
+  }
 /* END of Style NavBar */
 
 /* Style Section 1 (Background) */
@@ -221,7 +239,7 @@ nav ul a:hover{
     /* background-image: script.js ligne 10 */
     background-color: white;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
 }
 /* End of Style section 3 (backround fixed 1 and 2) */
@@ -239,7 +257,7 @@ nav ul a:hover{
 .section4{
    display: flex;
    flex-direction: row;
-   gap: 30px;
+   gap: 40px;
    align-items: center;
    justify-content: center;
    width: 80%;
@@ -271,9 +289,9 @@ nav ul a:hover{
    padding: 30px;
 }
 .ligne{
-width: 3px;
+width: 2px;
 height: 600px;
-background-color: black;
+background-color: rgb(120, 120, 120);
 }
 
 
@@ -292,7 +310,7 @@ footer{
     background-color: rgb(65, 105, 165);
     color: white;
 }
-.footerPart1 p{
+ p{
     margin: 50px auto;
 }
 footer input{
@@ -334,74 +352,109 @@ footer span{
 /* END of Style footer */
 
 
-/* @media (max-width: 992px){
-    nav h1{
-        width: 120px;
+@media (max-width: 992px){
+    nav ul a{
+        font-size:medium;
     }
- 
-    .user{
-        margin-right: 5px;
+    nav ul img{
+        display: none;
+    } 
+    .logoCenter{
+        display: none;
     }
-    .section1{
-        gap: 30px;
+    .section1-container{
+        margin: auto;
+        align-items: end;
     }
-   
-    .btn-left, .btn-right{
-        border-width: 5px;
+    .services{
+        flex-direction: column;
+            width: 90%;
     }
-    .section2 div img{
-        width: 80px;
-        height: 80px;
+    .service{
+        width: 80%;
+        border-bottom: 2px solid rgb(240, 240, 240);
+        padding-bottom: 30px;
     }
-    .section2 div p{
-        width: 60px;
-        height: 60px;
-        font-size: 12px;
+    .section4 div img{
+        width: 100px;
+        height: 100px;
+    }
+    .section4 div p{
+        border-radius: 5px;
+       font-size: 18px;
+       height: 62px;
+       width: 70px;
+       padding-top: 20px;
     }
     .ligne{
-        height: 320px;
-    }
-    .contact{
-        font-size: 0.8em;
-    }
-    .contact p a{
-        font-size: 0.9em;
+    height: 500px;
     }
 }
 
 @media (max-width: 767px){
+    
     nav ul{
         display: none;
     }
-    nav h1{
-        width: 90px;
-    }
-    .section1 h1{
-        font-size: 22px;
-    }
-    .section1 p{
-        height: 100%;
-        font-size: 18px;
-    }
-    #color{
-      margin-top: 0;
-    }
-    .ligne{
-        display: none;
-    }
-    .contact{
-        font-size: 0.9em;
-    }
-    .contact p a{
-        font-size: 0.9em;
-    }
-    footer ul{
-        display: none;
-    }
-    i{
-        font-size: 24px;
-        width: 35px;
-        text-align: center;
+    .burger-toggle{
         display: block;
+        position: absolute;
+        top: 15px;
+        right: 100px;
     }
-} */
+    .burger-toggle.burger-toggle.active{
+        width: 30px;
+    }
+  
+    .burger-toggle.active .line:nth-child(1) {
+      transform: translateY(8px) rotate(-45deg);
+      background-color: rgb(220, 220, 100);
+      transition: all 0.5s;
+      }
+      
+      .burger-toggle.active .line:nth-child(2) {
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+      
+      .burger-toggle.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(45deg);
+        background-color: rgb(220, 220, 100);
+        transition: all 0.5s;
+      }
+      nav.active{
+        height: 110px;
+        gap: 20px;
+        align-items: start;
+        
+      }
+      nav.active div.burger-toggle{
+        display: flex;
+        width: 10%;
+      }
+    nav.active ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        height: 90%;
+    }
+    nav.active ul a{
+        width: 100px;
+    }
+
+
+
+
+
+
+
+    .footerPart1{
+        height: 280px;
+    }
+    .footerPart1 form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+} 
