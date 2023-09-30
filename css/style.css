@@ -367,6 +367,10 @@ footer span{
         margin: auto;
         align-items: end;
     }
+    .btn-left, .btn-right{
+        width: 30px;
+        height: 30px;
+    }
     /* section 2 */
     .services{
         flex-direction: column;
