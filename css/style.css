@@ -18,6 +18,8 @@ nav{
     justify-content: space-between;
     background-color: rgb(245, 245, 245);
     border-bottom: 2px solid rgb(65, 105, 165);
+    height: 60px;
+    transition: height 0.5s;
 }
 nav .logo{
     height: 50px;
@@ -447,6 +449,7 @@ footer span{
     }
     nav.active ul a{
         width: 100px;
+        border-bottom: 1px solid rgb(200, 200, 200);
     }
     .paragraphe form input{
         width: 150px;
