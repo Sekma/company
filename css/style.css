@@ -405,6 +405,10 @@ footer span{
     nav ul{
         display: none;
     }
+    nav ul a{
+        height: 0;
+        transition: height 0.5s;
+    }
     .burger-toggle{
         display: block;
         position: absolute;
@@ -449,7 +453,11 @@ footer span{
     }
     nav.active ul a{
         width: 100px;
-        border-bottom: 1px solid rgb(200, 200, 200);
+        border-bottom: 1px solid rgb(222, 222, 222);
+        padding-bottom: 10px;
+    }
+    nav.active ul a:hover{
+        background-color: transparent;
     }
     .paragraphe form input{
         width: 150px;
